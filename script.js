@@ -87,4 +87,4 @@ document.querySelectorAll('.copy-email').forEach(button => {
   });
 });
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+document.querySelector('#year')?.replaceChildren(String(new Date().getFullYear()));
