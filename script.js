@@ -77,7 +77,7 @@ function showCopiedState(button, copiedText) {
 
 document.querySelectorAll('.copy-email').forEach(button => {
   button.addEventListener('click', async () => {
-    const email = button.dataset.email || 'info@actevra.com';
+    const email = button.dataset.email || 'info@actevra.com.tr';
     try {
       await copyToClipboard(email);
       showCopiedState(button, email);
