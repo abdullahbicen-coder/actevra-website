@@ -2,3 +2,5 @@
 .plc-architecture{background:#fff}.code-feature{display:grid;grid-template-columns:minmax(240px,.7fr) minmax(0,1.8fr);gap:5vw;align-items:start}.code-feature-copy{font-size:18px;line-height:1.7}.code-feature-copy p{margin-top:0}.code-feature-copy .code-source{font-size:13px;color:#687078;margin-top:28px}.code-feature .code-showcase{margin:0}.code-feature .code-showcase img{width:100%}@media(max-width:800px){.code-feature{grid-template-columns:1fr}.code-feature .code-showcase{margin-top:20px}}
 
 .lang-switch{display:flex;align-items:center;gap:6px;margin-left:18px;font-size:11px;letter-spacing:.08em}.lang-switch a,.lang-switch b{padding:7px 8px;border:1px solid #cfd4d8;text-decoration:none;font-weight:600}.lang-switch b{background:#20252b;color:#fff;border-color:#20252b}@media(max-width:800px){header{gap:10px}.lang-switch{margin-left:auto}.logo b{display:none}}
+
+.standards{background:#f3f5f6}.standards-grid article{background:#fff}.standards-note{max-width:900px;margin:28px 0 0;font-size:12px;line-height:1.65;color:#687078;border-left:2px solid #cfd4d8;padding-left:14px}
