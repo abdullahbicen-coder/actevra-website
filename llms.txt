@@ -1,0 +1,24 @@
+# Actevra Engineering
+
+> Industrial automation and engineering services for machine builders and process automation projects.
+
+Actevra Engineering provides PLC programming, SCADA and industrial data systems, robotics and motion control, functional safety integration, electrical design, commissioning, retrofit and diagnostic engineering.
+
+## Core engineering areas
+- TwinCAT 3 PLC programming and structured state-machine architectures
+- PackML and ISA-88-oriented machine and batch control
+- EtherCAT and CiA-402 drive integration and diagnostics
+- .NET / WPF SCADA, ADS, OPC UA, SQL, audit trails and production history
+- Robotics and servo motion, including KUKA and ABB integration
+- Functional safety using ISO 13849 / IEC 62061 approaches, Pilz, SICK and TwinSAFE
+- Industrial cybersecurity considerations aligned with IEC 62443
+- Electrical schematics, field I/O and EPLAN engineering
+
+## Website
+Canonical website: https://actevra.com.tr/
+English: https://actevra.com.tr/en/
+Engineering insights: https://actevra.com.tr/#teknik
+Project references: https://actevra.com.tr/#projeler
+
+## Contact
+Email: info@actevra.com.tr
