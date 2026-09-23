@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<style>.bg{fill:#10151c}.bar{fill:#171e27}.dot{fill:#596575}.title{fill:#f7f9fb;font:600 22px Arial}.kick{fill:#10b981;font:700 12px Arial;letter-spacing:2px}.box{fill:#171e27;stroke:#778493;stroke-width:2}.func{fill:#202a36;stroke:#10b981;stroke-width:2}.txt{fill:#d8dee9;font:16px Arial}.small{fill:#9aa6b2;font:13px Arial}.wire{stroke:#9aa6b2;stroke-width:2;fill:none}.out{fill:#10b981;font:600 15px Arial}.foot{fill:#778493;font:12px Arial}</style>
+<rect class="bg" width="1200" height="620" rx="18"/><rect class="bar" width="1200" height="92" rx="18"/>
+<circle class="dot" cx="35" cy="34" r="6"/><circle class="dot" cx="57" cy="34" r="6"/><circle class="dot" cx="79" cy="34" r="6"/>
+<text x="110" y="40" class="title">Temperature Control — FBD</text><text x="110" y="66" class="kick">TWINCAT · PID · PWM · FUNCTION BLOCK DIAGRAM</text>
+<rect x="55" y="155" width="175" height="145" rx="8" class="box"/><text x="78" y="185" class="txt">INPUT_CONTROLLER</text><text x="72" y="220" class="small">SET_POINT</text><text x="72" y="250" class="small">ACTUAL</text><text x="72" y="280" class="small">NOISE</text>
+<path d="M230 228 H310" class="wire"/><rect x="310" y="190" width="90" height="75" rx="8" class="func"/><text x="344" y="232" class="txt">GT</text><text x="323" y="252" class="small">&gt; 0.0</text>
+<path d="M230 270 H450 V350 H505" class="wire"/><rect x="505" y="310" width="85" height="75" rx="8" class="func"/><text x="524" y="354" class="txt">MOVE</text>
+<path d="M590 348 H655" class="wire"/><rect x="655" y="180" width="180" height="260" rx="8" class="box"/><text x="714" y="212" class="txt">FT_PID</text><text x="672" y="250" class="small">IN</text><text x="672" y="280" class="small">Kp</text><text x="672" y="310" class="small">Tn</text><text x="672" y="340" class="small">Tv</text><text x="672" y="370" class="small">I_LIM_L</text><text x="672" y="400" class="small">I_LIM_H</text>
+<path d="M835 310 H910" class="wire"/><rect x="910" y="225" width="180" height="170" rx="8" class="box"/><text x="958" y="258" class="txt">CTRL_PWM</text><text x="928" y="298" class="small">IN</text><text x="928" y="328" class="small">F_PWM</text><path d="M1090 310 H1150" class="wire"/><text x="1000" y="430" class="out">SSR Control</text>
+<text x="55" y="520" class="small">TemperatureSetValue − TemperatureActualValue → dead-zone → PID → PWM → SSR</text>
+<text x="55" y="585" class="foot">ACTEVRA ENGINEERING · REAL PROJECT LOGIC · VISUALIZED FROM TWINCAT FBD</text></svg>
