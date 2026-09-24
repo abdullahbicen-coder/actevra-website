@@ -1,1 +1,47 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Endüstriyel Etiket Ağ Geçidi Mimarisi | Actevra Engineering</title><meta name="description" content="PLC etiketlerini toplayan ve uygulamaları kontrolörlere doğrudan bağlamadan endüstriyel veriyi sunan servis mimarisi."><link rel="stylesheet" href="../styles.css"><style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.crumb{margin-bottom:36px}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}</style></head><body><div class="lang-switch page-lang"><b>TR</b><a href="../../en/insights/industrial-tag-gateway-architecture.html">EN</a></div><main class="article"><nav class="crumb"><a href="../index.html">Actevra Engineering</a> / Teknik Notlar</nav><p>TEKNİK NOT</p><h1>PLC ile Uygulamalar Arasında Neden Endüstriyel Veri Ağ Geçidi Kullanılır?</h1><p>Veriyi kullanan uygulama sayısı arttıkça her uygulamanın PLC'ye ayrı bağlanması abonelik, yapılandırma ve yeniden bağlanma mantığını tekrarlar. Bir ağ geçidi bu sorumluluğu tek yerde toplar.</p><h2>Arayüzden bağımsız servis</h2><p>Bir Windows servisi, operatör arayüzüne bağlı kalmadan PLC bağlantılarını sürekli yönetebilir. İzleme uygulamaları veri toplama yaşam döngüsünün parçası olmak yerine istemci haline gelir.</p><h2>Protokolleri ortak modele dönüştürün</h2><p>Adaptörler kontrolöre özel protokolleri yönetirken ağ geçidi ortak bir etiket modeli sunabilir. Böylece raporlama ve izleme uygulamalarındaki protokol bağımlılığı azalır.</p><h2>Bağlantı dayanıklılığı</h2><p>Yeniden bağlanma politikası, kalite durumu, eski veri yönetimi ve teşhis ağ geçidinde ele alınmalıdır. İstemciler son değerin güncel olduğunu varsaymak yerine değerin geçerliliğini bilmelidir.</p><h2>Operasyon görünürlüğü</h2><p>Hafif bir izleme uygulaması servis durumu, bağlı kontrolörler, etiket sayıları ve haberleşme hatalarını gösterebilir; asıl servis çalışma sorumluluğunu üstlenmez.</p><div class="article-nav"><a href="../index.html#hizmetler">Hizmetler</a><a href="../index.html#projeler">Projeler</a><a href="mailto:info@actevra.com.tr">İletişim</a></div></main></body></html>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Endüstriyel Etiket Ağ Geçidi Mimarisi | Actevra Engineering</title>
+<meta name="description" content="PLC etiketlerini toplayan ve uygulamaları kontrolörlere doğrudan bağlamadan endüstriyel veriyi sunan servis mimarisi.">
+<link rel="stylesheet" href="../styles.css?v=20260924-2">
+<style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.crumb{margin-bottom:36px}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}</style>
+<link rel="canonical" href="https://actevra.com.tr/insights/industrial-tag-gateway-architecture.html">
+<link rel="alternate" hreflang="tr" href="https://actevra.com.tr/insights/industrial-tag-gateway-architecture.html">
+<link rel="alternate" hreflang="en" href="https://actevra.com.tr/en/insights/industrial-tag-gateway-architecture.html">
+<link rel="alternate" hreflang="x-default" href="https://actevra.com.tr/insights/industrial-tag-gateway-architecture.html">
+<meta property="og:title" content="Endüstriyel Etiket Ağ Geçidi Mimarisi | Actevra Engineering">
+<meta property="og:description" content="PLC etiketlerini toplayan ve uygulamaları kontrolörlere doğrudan bağlamadan endüstriyel veriyi sunan servis mimarisi.">
+<meta property="og:url" content="https://actevra.com.tr/insights/industrial-tag-gateway-architecture.html">
+<meta property="og:type" content="article">
+</head>
+<body>
+<a class="skip-link" href="#main-content">İçeriğe geç</a><header class="site-header">
+      <a class="logo" href="../#top" aria-label="Actevra Engineering"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <button class="menu" type="button" aria-label="Menü" aria-controls="site-nav" aria-expanded="false">Menü</button>
+      <nav id="site-nav" aria-label="Ana menü"><a href="../#hizmetler">Hizmetler</a><a href="../#projeler">Projeler</a><a href="../#teknik">Teknik Notlar</a><a href="../#iletisim">İletişim</a></nav>
+      <div class="lang-switch" aria-label="Dil">
+<b aria-current="page">TR</b><a href="../en/insights/industrial-tag-gateway-architecture.html" lang="en" hreflang="en">EN</a>
+</div>
+    </header><main class="article" id="main-content"><nav class="crumb"><a href="../index.html">Actevra Engineering</a> / Teknik Notlar</nav><p>TEKNİK NOT</p>
+<h1>PLC ile Uygulamalar Arasında Neden Endüstriyel Veri Ağ Geçidi Kullanılır?</h1>
+<p>Veriyi kullanan uygulama sayısı arttıkça her uygulamanın PLC'ye ayrı bağlanması abonelik, yapılandırma ve yeniden bağlanma mantığını tekrarlar. Bir ağ geçidi bu sorumluluğu tek yerde toplar.</p>
+<h2>Arayüzden bağımsız servis</h2>
+<p>Bir Windows servisi, operatör arayüzüne bağlı kalmadan PLC bağlantılarını sürekli yönetebilir. İzleme uygulamaları veri toplama yaşam döngüsünün parçası olmak yerine istemci haline gelir.</p>
+<h2>Protokolleri ortak modele dönüştürün</h2>
+<p>Adaptörler kontrolöre özel protokolleri yönetirken ağ geçidi ortak bir etiket modeli sunabilir. Böylece raporlama ve izleme uygulamalarındaki protokol bağımlılığı azalır.</p>
+<h2>Bağlantı dayanıklılığı</h2>
+<p>Yeniden bağlanma politikası, kalite durumu, eski veri yönetimi ve teşhis ağ geçidinde ele alınmalıdır. İstemciler son değerin güncel olduğunu varsaymak yerine değerin geçerliliğini bilmelidir.</p>
+<h2>Operasyon görünürlüğü</h2>
+<p>Hafif bir izleme uygulaması servis durumu, bağlı kontrolörler, etiket sayıları ve haberleşme hatalarını gösterebilir; asıl servis çalışma sorumluluğunu üstlenmez.</p>
+<div class="article-nav">
+<a href="../index.html#hizmetler">Hizmetler</a><a href="../index.html#projeler">Projeler</a><a href="mailto:info@actevra.com.tr">İletişim</a>
+</div></main><footer class="site-footer"><a class="logo" href="../#top"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <div class="footer-contact">
+<a href="mailto:info@actevra.com.tr">info@actevra.com.tr</a><button class="copy-email secondary-button" type="button" data-email="info@actevra.com.tr" aria-label="info@actevra.com.tr — E-posta adresini kopyala">E-postayı kopyala</button>
+</div>
+      <p>© <span id="year">2026</span> Actevra Engineering · Türkiye</p></footer><div id="site-status" class="site-status" role="status" aria-live="polite" hidden></div>
+<script src="../script.js?v=20260924-2"></script>
+</body>
+</html>

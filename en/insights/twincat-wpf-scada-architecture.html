@@ -1,1 +1,50 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Building a Maintainable TwinCAT 3 + WPF SCADA Architecture | Actevra Engineering</title><link rel="stylesheet" href="../../styles.css"><style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}.lang-switch{justify-content:flex-end}</style></head><body><main class="article"><div class="lang-switch"><a href="../../insights/twincat-wpf-scada-architecture.html">TR</a><b>EN</b></div><nav><a href="../index.html">Actevra Engineering</a> / Engineering Insights</nav><p>ENGINEERING INSIGHT</p><h1>Building a Maintainable TwinCAT 3 + WPF SCADA Architecture</h1><p>Industrial SCADA becomes difficult to maintain when PLC communication, UI state, alarms and production data are tightly coupled.</p><h2>Separate communication from presentation</h2><p>Keep TwinCAT ADS access behind a connection and subscription layer. ViewModels consume typed HMI models instead of opening ADS handles directly.</p><h2>Use typed PLC/HMI contracts</h2><p>Mirror carefully designed PLC HMI structures in .NET and keep packing, field order and ownership explicit.</p><h2>Modular SCADA</h2><p>Prism modules separate alarms, recipes, production history, device faceplates and subsystem views.</p><h2>Operational diagnostics matter</h2><p>Expose PLC connection state, command ownership, raw drive state and communication health.</p><div class="article-nav"><a href="../index.html#services">Services</a><a href="../index.html#projects">Projects</a><a href="mailto:info@actevra.com.tr">Contact</a></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Building a Maintainable TwinCAT 3 + WPF SCADA Architecture | Actevra Engineering</title>
+<link rel="stylesheet" href="../../styles.css?v=20260924-2">
+<style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}.lang-switch{justify-content:flex-end}</style>
+<link rel="canonical" href="https://actevra.com.tr/en/insights/twincat-wpf-scada-architecture.html">
+<link rel="alternate" hreflang="tr" href="https://actevra.com.tr/insights/twincat-wpf-scada-architecture.html">
+<link rel="alternate" hreflang="en" href="https://actevra.com.tr/en/insights/twincat-wpf-scada-architecture.html">
+<link rel="alternate" hreflang="x-default" href="https://actevra.com.tr/insights/twincat-wpf-scada-architecture.html">
+<meta name="description" content="Industrial SCADA becomes difficult to maintain when PLC communication, UI state, alarms and production data are tightly coupled.">
+<meta property="og:title" content="Building a Maintainable TwinCAT 3 + WPF SCADA Architecture | Actevra Engineering">
+<meta property="og:description" content="Industrial SCADA becomes difficult to maintain when PLC communication, UI state, alarms and production data are tightly coupled.">
+<meta property="og:url" content="https://actevra.com.tr/en/insights/twincat-wpf-scada-architecture.html">
+<meta property="og:type" content="article">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a><header class="site-header">
+      <a class="logo" href="../#top" aria-label="Actevra Engineering"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <button class="menu" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav id="site-nav" aria-label="Main navigation"><a href="../#services">Services</a><a href="../#projects">Projects</a><a href="../#insights">Insights</a><a href="../#contact">Contact</a></nav>
+      <div class="lang-switch" aria-label="Language">
+<a href="../../insights/twincat-wpf-scada-architecture.html" lang="tr" hreflang="tr">TR</a><b aria-current="page">EN</b>
+</div>
+    </header><main class="article" id="main-content"><div class="lang-switch">
+<a href="../../insights/twincat-wpf-scada-architecture.html">TR</a><b>EN</b>
+</div>
+<nav><a href="../index.html">Actevra Engineering</a> / Engineering Insights</nav><p>ENGINEERING INSIGHT</p>
+<h1>Building a Maintainable TwinCAT 3 + WPF SCADA Architecture</h1>
+<p>Industrial SCADA becomes difficult to maintain when PLC communication, UI state, alarms and production data are tightly coupled.</p>
+<h2>Separate communication from presentation</h2>
+<p>Keep TwinCAT ADS access behind a connection and subscription layer. ViewModels consume typed HMI models instead of opening ADS handles directly.</p>
+<h2>Use typed PLC/HMI contracts</h2>
+<p>Mirror carefully designed PLC HMI structures in .NET and keep packing, field order and ownership explicit.</p>
+<h2>Modular SCADA</h2>
+<p>Prism modules separate alarms, recipes, production history, device faceplates and subsystem views.</p>
+<h2>Operational diagnostics matter</h2>
+<p>Expose PLC connection state, command ownership, raw drive state and communication health.</p>
+<div class="article-nav">
+<a href="../index.html#services">Services</a><a href="../index.html#projects">Projects</a><a href="mailto:info@actevra.com.tr">Contact</a>
+</div></main><footer class="site-footer"><a class="logo" href="../#top"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <div class="footer-contact">
+<a href="mailto:info@actevra.com.tr">info@actevra.com.tr</a><button class="copy-email secondary-button" type="button" data-email="info@actevra.com.tr" aria-label="info@actevra.com.tr — Copy email address">Copy email</button>
+</div>
+      <p>© <span id="year">2026</span> Actevra Engineering · Türkiye</p></footer><div id="site-status" class="site-status" role="status" aria-live="polite" hidden></div>
+<script src="../../script.js?v=20260924-2"></script>
+</body>
+</html>

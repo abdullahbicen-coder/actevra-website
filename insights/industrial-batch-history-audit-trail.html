@@ -1,1 +1,47 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Endüstriyel Batch Geçmişi ve Denetim İzi | Actevra Engineering</title><meta name="description" content="PLC ve SCADA sistemlerinde batch geçmişi, reçete izlenebilirliği, üretim kayıtları ve operatör denetim izi için tasarım yaklaşımı."><link rel="stylesheet" href="../styles.css"><style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.crumb{margin-bottom:36px}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}</style></head><body><div class="lang-switch page-lang"><b>TR</b><a href="../../en/insights/industrial-batch-history-audit-trail.html">EN</a></div><main class="article"><nav class="crumb"><a href="../index.html">Actevra Engineering</a> / Teknik Notlar</nav><p>TEKNİK NOT</p><h1>Endüstriyel SCADA'da Batch Geçmişi ve Denetim İzi</h1><p>Üretim geçmişi ile denetim izi farklı soruları cevaplar. Batch geçmişi prosesin ne ürettiğini, denetim kayıtları ise sistemde kimin neyi ne zaman değiştirdiğini veya komutladığını gösterir.</p><h2>Üretim ve kullanıcı kayıtlarını ayırın</h2><p>Batch kaydı; batch kimliği, reçete revizyonu, hedefler, ölçülen değerler, başlangıç/bitiş zamanları ve sonucu içerebilir. Denetim kaydı ise parametre değişikliği, reçete seçimi, onay ve manuel komut gibi kullanıcı işlemlerine odaklanır.</p><h2>Zaman damgasını doğru katmanda üretin</h2><p>Olaylar mümkün olduğunca işlemin yetkili olduğu katmana yakın zaman damgası almalıdır. PLC olayları ile SCADA işlemlerinin çelişkili geçmiş oluşturmaması için sahiplik açık tanımlanmalıdır.</p><h2>Reçete izlenebilirliği</h2><p>Gerçekte hangi reçetenin çalıştırıldığını yeniden oluşturabilecek kimlik bilgilerini saklayın. Reçete zaman içinde değişebiliyorsa yalnızca isim tutmak yeterli değildir; revizyon veya değişmez kimlikler kaydı güçlendirir.</p><h2>İnceleme için tasarlayın</h2><p>Geçmiş ekranları zaman, batch, reçete ve olay türüne göre filtrelemeyi desteklemelidir. Dışa aktarma yararlıdır; temel amaç üretim sapmalarını ve operatör işlemlerini hızlı inceleyebilmektir.</p><div class="article-nav"><a href="../index.html#hizmetler">Hizmetler</a><a href="../index.html#projeler">Projeler</a><a href="mailto:info@actevra.com.tr">İletişim</a></div></main></body></html>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Endüstriyel Batch Geçmişi ve Denetim İzi | Actevra Engineering</title>
+<meta name="description" content="PLC ve SCADA sistemlerinde batch geçmişi, reçete izlenebilirliği, üretim kayıtları ve operatör denetim izi için tasarım yaklaşımı.">
+<link rel="stylesheet" href="../styles.css?v=20260924-2">
+<style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.crumb{margin-bottom:36px}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}</style>
+<link rel="canonical" href="https://actevra.com.tr/insights/industrial-batch-history-audit-trail.html">
+<link rel="alternate" hreflang="tr" href="https://actevra.com.tr/insights/industrial-batch-history-audit-trail.html">
+<link rel="alternate" hreflang="en" href="https://actevra.com.tr/en/insights/industrial-batch-history-audit-trail.html">
+<link rel="alternate" hreflang="x-default" href="https://actevra.com.tr/insights/industrial-batch-history-audit-trail.html">
+<meta property="og:title" content="Endüstriyel Batch Geçmişi ve Denetim İzi | Actevra Engineering">
+<meta property="og:description" content="PLC ve SCADA sistemlerinde batch geçmişi, reçete izlenebilirliği, üretim kayıtları ve operatör denetim izi için tasarım yaklaşımı.">
+<meta property="og:url" content="https://actevra.com.tr/insights/industrial-batch-history-audit-trail.html">
+<meta property="og:type" content="article">
+</head>
+<body>
+<a class="skip-link" href="#main-content">İçeriğe geç</a><header class="site-header">
+      <a class="logo" href="../#top" aria-label="Actevra Engineering"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <button class="menu" type="button" aria-label="Menü" aria-controls="site-nav" aria-expanded="false">Menü</button>
+      <nav id="site-nav" aria-label="Ana menü"><a href="../#hizmetler">Hizmetler</a><a href="../#projeler">Projeler</a><a href="../#teknik">Teknik Notlar</a><a href="../#iletisim">İletişim</a></nav>
+      <div class="lang-switch" aria-label="Dil">
+<b aria-current="page">TR</b><a href="../en/insights/industrial-batch-history-audit-trail.html" lang="en" hreflang="en">EN</a>
+</div>
+    </header><main class="article" id="main-content"><nav class="crumb"><a href="../index.html">Actevra Engineering</a> / Teknik Notlar</nav><p>TEKNİK NOT</p>
+<h1>Endüstriyel SCADA'da Batch Geçmişi ve Denetim İzi</h1>
+<p>Üretim geçmişi ile denetim izi farklı soruları cevaplar. Batch geçmişi prosesin ne ürettiğini, denetim kayıtları ise sistemde kimin neyi ne zaman değiştirdiğini veya komutladığını gösterir.</p>
+<h2>Üretim ve kullanıcı kayıtlarını ayırın</h2>
+<p>Batch kaydı; batch kimliği, reçete revizyonu, hedefler, ölçülen değerler, başlangıç/bitiş zamanları ve sonucu içerebilir. Denetim kaydı ise parametre değişikliği, reçete seçimi, onay ve manuel komut gibi kullanıcı işlemlerine odaklanır.</p>
+<h2>Zaman damgasını doğru katmanda üretin</h2>
+<p>Olaylar mümkün olduğunca işlemin yetkili olduğu katmana yakın zaman damgası almalıdır. PLC olayları ile SCADA işlemlerinin çelişkili geçmiş oluşturmaması için sahiplik açık tanımlanmalıdır.</p>
+<h2>Reçete izlenebilirliği</h2>
+<p>Gerçekte hangi reçetenin çalıştırıldığını yeniden oluşturabilecek kimlik bilgilerini saklayın. Reçete zaman içinde değişebiliyorsa yalnızca isim tutmak yeterli değildir; revizyon veya değişmez kimlikler kaydı güçlendirir.</p>
+<h2>İnceleme için tasarlayın</h2>
+<p>Geçmiş ekranları zaman, batch, reçete ve olay türüne göre filtrelemeyi desteklemelidir. Dışa aktarma yararlıdır; temel amaç üretim sapmalarını ve operatör işlemlerini hızlı inceleyebilmektir.</p>
+<div class="article-nav">
+<a href="../index.html#hizmetler">Hizmetler</a><a href="../index.html#projeler">Projeler</a><a href="mailto:info@actevra.com.tr">İletişim</a>
+</div></main><footer class="site-footer"><a class="logo" href="../#top"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <div class="footer-contact">
+<a href="mailto:info@actevra.com.tr">info@actevra.com.tr</a><button class="copy-email secondary-button" type="button" data-email="info@actevra.com.tr" aria-label="info@actevra.com.tr — E-posta adresini kopyala">E-postayı kopyala</button>
+</div>
+      <p>© <span id="year">2026</span> Actevra Engineering · Türkiye</p></footer><div id="site-status" class="site-status" role="status" aria-live="polite" hidden></div>
+<script src="../script.js?v=20260924-2"></script>
+</body>
+</html>

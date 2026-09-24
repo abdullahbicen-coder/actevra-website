@@ -1,1 +1,50 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PackML-Oriented PLC Architecture Without Losing Debuggability | Actevra Engineering</title><link rel="stylesheet" href="../../styles.css"><style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}.lang-switch{justify-content:flex-end}</style></head><body><main class="article"><div class="lang-switch"><a href="../../insights/packml-state-machine-plc-design.html">TR</a><b>EN</b></div><nav><a href="../index.html">Actevra Engineering</a> / Engineering Insights</nav><p>ENGINEERING INSIGHT</p><h1>PackML-Oriented PLC Architecture Without Losing Debuggability</h1><p>PackML gives machines a common operational vocabulary, but implementation still needs clear ownership across unit, subsystem and component levels.</p><h2>One owner for each decision</h2><p>Define which layer owns each request and let lower layers enforce device-level interlocks.</p><h2>CASE-based sequences</h2><p>Explicit state machines make active states, transitions and timeout conditions visible online.</p><h2>Manual control without bypassing safety</h2><p>Manual control may bypass appropriate automatic constraints, while safety and device faults remain authoritative.</p><h2>Stopping is a sequence</h2><p>Stopping should explicitly clear requests, close paths and wait for required mechanical actions.</p><div class="article-nav"><a href="../index.html#services">Services</a><a href="../index.html#projects">Projects</a><a href="mailto:info@actevra.com.tr">Contact</a></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PackML-Oriented PLC Architecture Without Losing Debuggability | Actevra Engineering</title>
+<link rel="stylesheet" href="../../styles.css?v=20260924-2">
+<style>.article{max-width:980px;margin:auto;padding:90px 28px}.article h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1}.article h2{margin-top:52px}.article p{font-size:1.08rem;line-height:1.8}.article-nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:60px}.lang-switch{justify-content:flex-end}</style>
+<link rel="canonical" href="https://actevra.com.tr/en/insights/packml-state-machine-plc-design.html">
+<link rel="alternate" hreflang="tr" href="https://actevra.com.tr/insights/packml-state-machine-plc-design.html">
+<link rel="alternate" hreflang="en" href="https://actevra.com.tr/en/insights/packml-state-machine-plc-design.html">
+<link rel="alternate" hreflang="x-default" href="https://actevra.com.tr/insights/packml-state-machine-plc-design.html">
+<meta name="description" content="PackML gives machines a common operational vocabulary, but implementation still needs clear ownership across unit, subsystem and component levels.">
+<meta property="og:title" content="PackML-Oriented PLC Architecture Without Losing Debuggability | Actevra Engineering">
+<meta property="og:description" content="PackML gives machines a common operational vocabulary, but implementation still needs clear ownership across unit, subsystem and component levels.">
+<meta property="og:url" content="https://actevra.com.tr/en/insights/packml-state-machine-plc-design.html">
+<meta property="og:type" content="article">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a><header class="site-header">
+      <a class="logo" href="../#top" aria-label="Actevra Engineering"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <button class="menu" type="button" aria-label="Menu" aria-controls="site-nav" aria-expanded="false">Menu</button>
+      <nav id="site-nav" aria-label="Main navigation"><a href="../#services">Services</a><a href="../#projects">Projects</a><a href="../#insights">Insights</a><a href="../#contact">Contact</a></nav>
+      <div class="lang-switch" aria-label="Language">
+<a href="../../insights/packml-state-machine-plc-design.html" lang="tr" hreflang="tr">TR</a><b aria-current="page">EN</b>
+</div>
+    </header><main class="article" id="main-content"><div class="lang-switch">
+<a href="../../insights/packml-state-machine-plc-design.html">TR</a><b>EN</b>
+</div>
+<nav><a href="../index.html">Actevra Engineering</a> / Engineering Insights</nav><p>ENGINEERING INSIGHT</p>
+<h1>PackML-Oriented PLC Architecture Without Losing Debuggability</h1>
+<p>PackML gives machines a common operational vocabulary, but implementation still needs clear ownership across unit, subsystem and component levels.</p>
+<h2>One owner for each decision</h2>
+<p>Define which layer owns each request and let lower layers enforce device-level interlocks.</p>
+<h2>CASE-based sequences</h2>
+<p>Explicit state machines make active states, transitions and timeout conditions visible online.</p>
+<h2>Manual control without bypassing safety</h2>
+<p>Manual control may bypass appropriate automatic constraints, while safety and device faults remain authoritative.</p>
+<h2>Stopping is a sequence</h2>
+<p>Stopping should explicitly clear requests, close paths and wait for required mechanical actions.</p>
+<div class="article-nav">
+<a href="../index.html#services">Services</a><a href="../index.html#projects">Projects</a><a href="mailto:info@actevra.com.tr">Contact</a>
+</div></main><footer class="site-footer"><a class="logo" href="../#top"><span aria-hidden="true">AE</span><b>Actevra Engineering</b></a>
+      <div class="footer-contact">
+<a href="mailto:info@actevra.com.tr">info@actevra.com.tr</a><button class="copy-email secondary-button" type="button" data-email="info@actevra.com.tr" aria-label="info@actevra.com.tr — Copy email address">Copy email</button>
+</div>
+      <p>© <span id="year">2026</span> Actevra Engineering · Türkiye</p></footer><div id="site-status" class="site-status" role="status" aria-live="polite" hidden></div>
+<script src="../../script.js?v=20260924-2"></script>
+</body>
+</html>
